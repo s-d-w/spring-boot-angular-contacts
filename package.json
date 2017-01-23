@@ -1,0 +1,17 @@
+{
+  "name": "contacts",
+  "version": "0.0.1",
+  "description": "contacts",
+  "private": true,
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "dependencies": {
+    "bower": "1.7.9"
+  },
+  "engines": {
+    "node": "^0.12 || ^4.2"
+  },
+  "scripts": {
+  }
+}

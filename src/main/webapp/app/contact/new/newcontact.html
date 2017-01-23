@@ -1,0 +1,54 @@
+<h1> Add New Contact </h1><br>
+<div class="row">
+    <form name="createContact" novalidate class="form-validator">
+        <div class="form-group row">
+            <label for="firstname" class="col-sm-2 col-form-label">First Name: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="firstname" placeholder="First Name" ng-model="newContact.firstName" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="lastname" class="col-sm-2 col-form-label">Last Name: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name" ng-model="newContact.lastName" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="streetaddress" class="col-sm-2 col-form-label">Street Address: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="streetaddress" placeholder="Street Address" ng-model="newContact.streetAddress" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="city" class="col-sm-2 col-form-label">City: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="city" placeholder="City" ng-model="newContact.city" required />
+            </div>
+        </div>  
+        <div class="form-group row">
+            <label for="state" class="col-sm-2 col-form-label">State: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="state" placeholder="State" ng-model="newContact.state" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="zip" class="col-sm-2 col-form-label">Zip Code: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="zip" placeholder="Zip Code" ng-model="newContact.zip" required />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="phonenumber" class="col-sm-2 col-form-label">Phone Number: </label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number" ng-model="newContact.phoneNumber" required />
+            </div>
+        </div>       
+        <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" ng-click="vm.createContact(newContact)" ng-disabled="createContact.$invalid">Create Contact</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+

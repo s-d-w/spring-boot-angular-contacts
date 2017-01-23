@@ -1,0 +1,7 @@
+.form-validator input.ng-invalid.ng-touched {
+    background-color: #ffa5a5;
+}
+
+.form-validator input.ng-valid.ng-touched {
+    background-color: #0ffc32;
+}
